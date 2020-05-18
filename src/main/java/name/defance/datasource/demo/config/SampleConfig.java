@@ -10,8 +10,9 @@ public class SampleConfig {
 
     @Autowired
     public SampleConfig(DataSource dataSource) {
-        System.out.println("DATASOURCE: " + dataSource);
+       
         this.dataSource = dataSource;
+        System.out.println("DATASOURCE: " + dataSource);
     }
 
     final private DataSource dataSource;
